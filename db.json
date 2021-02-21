@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 4300,
+      "quantity": 600,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Printer",
+      "price": 300,
+      "quantity": 100,
+      "selected": true,
+      "available": false
+    },
+    {
+      "id": 3,
+      "name": "Smartphone",
+      "price": 1200,
+      "quantity": 1,
+      "selected": false,
+      "available": false
+    },
+    {
+      "id": 4,
+      "name": "Tablette",
+      "price": 700,
+      "quantity": 200,
+      "selected": false,
+      "available": true
+    },
+    {
+      "name": "Headphone",
+      "price": 250,
+      "quantity": 100,
+      "selected": true,
+      "available": true,
+      "id": 5
+    },
+    {
+      "name": "Cable",
+      "price": "15",
+      "quantity": "50",
+      "selected": true,
+      "available": true,
+      "id": 7
+    },
+    {
+      "name": "Coque de smartphone",
+      "price": "30",
+      "quantity": "50",
+      "selected": true,
+      "available": true,
+      "id": 8
+    },
+    {
+      "name": "Glass de smartphone",
+      "price": "30",
+      "quantity": "50",
+      "selected": true,
+      "available": true,
+      "id": 9
+    },
+    {
+      "id": 11,
+      "name": "Souris sans fil",
+      "price": "5",
+      "quantity": "6",
+      "selected": true,
+      "available": true
+    },
+    {
+      "name": "Ludovic Caron",
+      "price": "12",
+      "quantity": "1",
+      "selected": true,
+      "available": true,
+      "id": 12
+    },
+    {
+      "name": "Chargeur",
+      "price": "45",
+      "quantity": "50",
+      "selected": true,
+      "available": true,
+      "id": 13
+    }
+  ]
+}
