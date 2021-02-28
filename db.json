@@ -5,7 +5,7 @@
       "name": "Computer",
       "price": 4300,
       "quantity": 600,
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {
@@ -13,7 +13,7 @@
       "name": "Printer",
       "price": 300,
       "quantity": 100,
-      "selected": true,
+      "selected": false,
       "available": false
     },
     {
@@ -36,7 +36,7 @@
       "name": "Headphone",
       "price": 250,
       "quantity": 100,
-      "selected": true,
+      "selected": false,
       "available": true,
       "id": 5
     },
@@ -44,7 +44,7 @@
       "name": "Cable",
       "price": "15",
       "quantity": "50",
-      "selected": true,
+      "selected": false,
       "available": true,
       "id": 7
     },
@@ -52,7 +52,7 @@
       "name": "Coque de smartphone",
       "price": "30",
       "quantity": "50",
-      "selected": true,
+      "selected": false,
       "available": true,
       "id": 8
     },
@@ -73,20 +73,20 @@
       "available": true
     },
     {
-      "name": "Ludovic Caron",
-      "price": "12",
-      "quantity": "1",
-      "selected": true,
-      "available": true,
-      "id": 12
-    },
-    {
       "name": "Chargeur",
       "price": "45",
       "quantity": "50",
       "selected": true,
       "available": true,
       "id": 13
+    },
+    {
+      "id": 14,
+      "name": "Mug",
+      "price": "15",
+      "quantity": "10",
+      "selected": true,
+      "available": true
     }
   ]
 }

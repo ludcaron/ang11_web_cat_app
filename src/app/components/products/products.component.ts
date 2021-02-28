@@ -3,7 +3,7 @@ import { from, Observable, of } from 'rxjs';
 import { map, startWith, catchError } from 'rxjs/operators';
 import { Product } from 'src/app/model/product.model';
 import { ProductsService } from 'src/app/services/products.service';
-import { AppDataState, DataStateEnum } from 'src/app/state/product.state';
+import { ActionEvent, AppDataState, DataStateEnum, ProducActionsTypes } from 'src/app/state/product.state';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -18,6 +18,7 @@ export class ProductsComponent implements OnInit {
   // 2ème méthode
   products$: Observable<AppDataState<Product[]>> | null = null;
   readonly DataStateEnum = DataStateEnum;
+  //readonly ProducActionsTypes = ProducActionsTypes;
 
 
   constructor(private productsService: ProductsService, private router: Router) { }
@@ -94,6 +95,20 @@ export class ProductsComponent implements OnInit {
   onEdit(p: Product) {
     this.router.navigateByUrl("/editProduct/" + p.id);
   }
+
+  onActionEvent($event: ActionEvent) {
+    console.log($event.type);
+    switch ($event.type) {
+      case ProducActionsTypes.GET_ALL_PRODUCTS: this.onGetAllProducts(); break;
+      case ProducActionsTypes.GET_SELECTED_PRODUCTS: this.onGetSelectedProducts(); break;
+      case ProducActionsTypes.GET_ALLVAILABLE_RODUCTS: this.onGetAvailableProducts(); break;
+      case ProducActionsTypes.NEW_PRODUCT: this.onNewProduct(); break;
+      case ProducActionsTypes.SELECT_PRODUCT: this.onSelect($event.payload); break;
+      case ProducActionsTypes.EDIT_PRODUCT: this.onEdit($event.payload); break;
+      case ProducActionsTypes.DELETE_PRODUCT: this.onDelete($event.payload); break;
+    }
+  }
+
 
   //1ere méthode qui fonctionne
   /* products:Product[] | null=null;
