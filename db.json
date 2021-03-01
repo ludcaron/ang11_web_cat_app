@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Computer",
       "price": 4300,
-      "quantity": 600,
+      "quantity": "700",
       "selected": false,
       "available": true
     },
@@ -13,7 +13,7 @@
       "name": "Printer",
       "price": 300,
       "quantity": 100,
-      "selected": false,
+      "selected": true,
       "available": false
     },
     {
@@ -29,7 +29,7 @@
       "name": "Tablette",
       "price": 700,
       "quantity": 200,
-      "selected": false,
+      "selected": true,
       "available": true
     },
     {
@@ -55,14 +55,6 @@
       "selected": false,
       "available": true,
       "id": 8
-    },
-    {
-      "name": "Glass de smartphone",
-      "price": "30",
-      "quantity": "50",
-      "selected": true,
-      "available": true,
-      "id": 9
     },
     {
       "id": 11,

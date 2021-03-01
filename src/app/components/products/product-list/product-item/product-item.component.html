@@ -3,13 +3,15 @@
     <td>{{product.name}}</td>
     <td>{{product.price}}</td>
     <td>{{product.quantity}}</td>
-    <td>{{product.available}}</td>
+    <!-- <td><span [ngClass]="product.selected? 'fa fa-check-square-o text-success':'fa fa-square-o text-success'"></span></td> -->
     <td>
-        <button (click)="onSelect(product)"  [ngClass]="product.selected?'btn-outline-success':'btn-outline-danger'" class="btn btn-sm my-1" >
-            <span *ngIf="product.selected" >Unselect</span>
-            <span *ngIf="!product.selected" >Select</span>
-        </button>
+        <a (click)="onSelect(product)"  [ngClass]="product.selected?'fa fa-check-square-o text-success':'fa fa-square-o text-success'" class="btn btn-sm my-1" >
+            <!-- <span *ngIf="product.selected" >Unselect</span> -->
+            <!-- <span *ngIf="!product.selected" >Select</span> -->
+        </a>
     </td>
+    <td><span [ngClass]="product.available? 'fa fa-check text-success':''"></span></td>
+    
     <td>
         <button (click)="onEdit(product)" class="btn btn-sm btn-outline-danger">
             <span class="fa fa-pencil-square-o"></span>
